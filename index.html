@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo"
+          ><img src="assets/navigation/logo.png" id="logo" alt="Logo"
+        /></a>
+        <a href="#" class="contact"
+          ><img src="assets/navigation/contact.svg" alt="Contact Button"
+        /></a>
+        <p id="menu">-----<br />-----<br />-----</p>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-section slider">
+        <div class="track">
+          <div class="slide-holder">
+            <img class="slide" src="assets/hero-section/heroimg4.png" />
+            <div class="slide-overlay"></div>
+            <div class="slide-text">
+              <h3>We Furnish to Perfection</h3>
+              <p>Beautiful Home is just a click away</p>
+            </div>
+            <div class="slide-button">
+              <a href="#"><button>Get Free Quote</button></a>
+            </div>
+          </div>
+          <div class="slide-holder">
+            <img class="slide" src="assets/hero-section/heroimg1.png" />
+            <div class="slide-overlay"></div>
+            <div class="slide-text">
+              <h3>We Dessign a Artful life</h3>
+              <p>You Visualize We Actualize</p>
+            </div>
+            <div class="slide-button">
+              <a href="#"><button>Get Free Quote</button></a>
+            </div>
+          </div>
+          <div class="slide-holder">
+            <img class="slide" src="assets/hero-section/heroimg2.png" />
+            <div class="slide-overlay"></div>
+            <div class="slide-text">
+              <h3>Bring your Dream home to Life</h3>
+              <p>Book us to Talior your Space</p>
+            </div>
+            <div class="slide-button">
+              <a href="#"><button>Get Free Quote</button></a>
+            </div>
+          </div>
+          <div class="slide-holder">
+            <img class="slide" src="assets/hero-section/heroimg3.png" />
+            <div class="slide-overlay"></div>
+            <div class="slide-text">
+              <h3>We Design a Space you Love</h3>
+              <p>Show us your Style</p>
+            </div>
+            <div class="slide-button">
+              <a href="#"><button>Get Free Quote</button></a>
+            </div>
+          </div>
+          <div class="slide-holder">
+            <img class="slide" src="assets/hero-section/heroimg4.png" />
+            <div class="slide-overlay"></div>
+            <div class="slide-text">
+              <h3>We Furnish to Perfection</h3>
+              <p>Beautiful Home is just a click away</p>
+            </div>
+            <div class="slide-button">
+              <a href="#"><button>Get Free Quote</button></a>
+            </div>
+          </div>
+          <div class="slide-holder">
+            <img class="slide" src="assets/hero-section/heroimg1.png" />
+            <div class="slide-overlay"></div>
+            <div class="slide-text">
+              <h3>We Dessign a Artful life</h3>
+              <p>You Visualize We Actualize</p>
+            </div>
+            <div class="slide-button">
+              <a href="#"><button>Get Free Quote</button></a>
+            </div>
+          </div>
+          <!-- <img class="slide" src="assets/hero-section/heroimg4.png" />
+          <img class="slide" src="assets/hero-section/heroimg1.png" />
+          <img class="slide" src="assets/hero-section/heroimg2.png" />
+          <img class="slide" src="assets/hero-section/heroimg3.png" />
+          <img class="slide" src="assets/hero-section/heroimg4.png" />
+          <img class="slide" src="assets/hero-section/heroimg1.png" /> -->
+        </div>
+      </div>
+      <div class="nav">
+        <button id="prev-button" onclick="gop()">
+          <img id="prev" src="assets/hero-section/arrow.svg" />
+        </button>
+        <button id="next-button" onclick="gon()">
+          <img id="next" src="assets/hero-section/arrow.svg" />
+        </button>
+      </div>
+      <div class="dots">
+        <span class="dot active" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+      </div>
+      <div class="youtube-carousel">
+        <div class="carousel-track">
+          <div class="yt-card">
+            <img src="assets/youtube-carousel/yt1.webp" />
+            <div class="yt-overlay"></div>
+            <div class="yt-title">
+              <a href="https://youtu.be/xJJ9RtSQ_Og?si=LDYpnX2V9PutVjCz"
+                >Project Color Nest</a
+              >
+            </div>
+          </div>
+          <div class="yt-card">
+            <img src="assets/youtube-carousel/yt2.webp" />
+            <div class="yt-overlay"></div>
+            <div class="yt-title">
+              <a href="https://youtu.be/Ed6G3NytUtE?si=iRlPMHwFyXDSHg-Y"
+                >Project Modern Muse</a
+              >
+            </div>
+          </div>
+          <div class="yt-card">
+            <img src="assets/youtube-carousel/yt3.webp" />
+            <div class="yt-overlay"></div>
+            <div class="yt-title">
+              <a href="https://youtu.be/0Tn04dL6X90?si=2NKEsBFMl2sTZwSZ"
+                >Project Whisper White</a
+              >
+            </div>
+          </div>
+          <div class="yt-card">
+            <img src="assets/youtube-carousel/yt4.webp" />
+            <div class="yt-overlay"></div>
+            <div class="yt-title">
+              <a href="https://youtu.be/-bBhlp2GvTk?si=RY1hzjKnXW5BMdrM"
+                >Project Lily</a
+              >
+            </div>
+          </div>
+          <div class="yt-card">
+            <img src="assets/youtube-carousel/yt5.webp" />
+            <div class="yt-overlay"></div>
+            <div class="yt-title">
+              <a href="https://youtu.be/4tpJlbxWRto?si=wdJbszJ2Bm3IBkI_"
+                >Project Winter Grace</a
+              >
+            </div>
+          </div>
+          <div class="yt-card">
+            <img src="assets/youtube-carousel/yt6.webp" />
+            <div class="yt-overlay"></div>
+            <div class="yt-title">
+              <a href="https://youtu.be/cAWumVOs0yY?si=ckzDeLEYV3QX7JV5"
+                >Elegant Luxury 3BHK</a
+              >
+            </div>
+          </div>
+        </div>
+        <p>
+          <a href="https://www.youtube.com/@AmusingInterior/videos"
+            >Click here</a
+          >
+          to view our Youtube channel
+        </p>
+      </div>
+      <div class="bulletpoint">
+        <img src="assets/bulletpoints/Bulletpoint.svg" />
+        <h1>We Design your Space</h1>
+        <p>
+          AMU Design Studio offers unique design solutions for your space. All
+          you need to do is show us your place and we can help you make it your
+          dream home. Our designers are here to assist you throughout your
+          journey and give you solutions for your residential or commercial
+          spaces. Book us today to help us become your one-on-one guide and
+          create a space that's both stylish and comfortable. We are based in
+          Noida. Tell us your requirement and we will take care of everything.
+          It’s that simple really.
+        </p>
+        <a href="#"><img src="assets/bulletpoints/Arrow.svg" /></a
+        ><a href="#"
+          ><p><b>Read More</b></p></a
+        >
+      </div>
+      <div class="easy-book">
+        <img src="assets/bulletpoints/Bulletpoint.svg" />
+        <h1>It's Easy to Book us</h1>
+        <div class="eb1">
+          <img src="assets/easy-book/easy-book-1.png" />
+          <h3>Meet the Designer</h3>
+          <div class="easy-book-text-1">
+            <p>
+              Book an appointment and we’ll plan a meeting for you with the
+              designer
+            </p>
+          </div>
+        </div>
+        <div class="eb2">
+          <h3>Discuss Ideas</h3>
+          <div class="easy-book-text-2">
+            <p>
+              Share your floor plan to discuss the budget, design, color & more
+            </p>
+          </div>
+          <img src="assets/easy-book/easy-book-2.png" />
+        </div>
+        <div class="eb1">
+          <img src="assets/easy-book/easy-book-3.png" />
+          <h3>Get Free Quote</h3>
+          <br />
+          <div class="easy-book-text-1">
+            <p>
+              After reviewing your requirement we will give you a tentative
+              budget
+            </p>
+          </div>
+        </div>
+        <div class="eb2">
+          <img src="assets/easy-book/easy-book-4.png" />
+          <h3>Book Us!</h3>
+          <br />
+          <div class="easy-book-text-2">
+            <p>
+              Pay 10% of the final budget to book us & we will start the work
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bulletpoint">
+        <img src="assets/bulletpoints/Bulletpoint.svg" />
+        <h1>Our latest Projects:</h1>
+        <p>
+          Take a look at our latest projects, designed and curated by our team
+          with great precision and hard work. We have done over a hundred
+          projects to date and served in around twenty cities all over India. We
+          believe each of our projects is unique and brings the client’s vision
+          to life. Our happier experience with homeowners and effortless
+          creative approach makes us one of the most trusted Interior Design
+          companies in Noida.
+        </p>
+        <a href="#"><img src="assets/bulletpoints/Arrow.svg" /></a><a href="#"><p><b>View More</b></p></a>
+        <div class="projects-slideshow">
+          <div class="project-slideshow-track">
+            <div class="project-slide">
+              <img src="assets/project-images/project1.png">
+              <div class="project-slide-overlay"></div>
+              <div class="project-slide-text">
+                <h2>Winter Grace</h2>
+              </div>
+            </div>
+            <div class="project-slide">
+              <img src="assets/project-images/project2.png">
+              <div class="project-slide-overlay"></div>
+              <div class="project-slide-text">
+                <h2>Pastel Dew</h2>
+              </div>
+            </div>
+            <div class="project-slide">
+              <img src="assets/project-images/project3.png">
+              <div class="project-slide-overlay"></div>
+              <div class="project-slide-text">
+                <h2>Heritage Heu</h2>
+              </div>
+            </div>
+            <div class="project-slide">
+              <img src="assets/project-images/project4.png">
+              <div class="project-slide-overlay"></div>
+              <div class="project-slide-text">
+                <h2>April Bloom</h2>
+              </div>
+            </div>
+            <div class="project-slide">
+              <img src="assets/project-images/project5.png">
+              <div class="project-slide-overlay"></div>
+              <div class="project-slide-text">
+                <h2>Bird View</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
