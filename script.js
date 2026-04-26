@@ -81,5 +81,20 @@ setInterval(() => {
     index = 0;
   }
 
-  projectTrack.style.transform = `translateX(-${index * 395.026}px)`;
+  projectTrack.style.transform = `translateX(-${index * 100}%)`;
 }, 10000);
+
+// EB HEIGHT ISSUE
+
+const div1List = document.querySelectorAll(".eb1");
+const div2List = document.querySelectorAll(".eb2");
+
+div1List.forEach((div1, index) => {
+
+  function syncHeight() {
+    div2List[index].style.height =
+      div1.offsetHeight + "px";
+  }
+
+  new ResizeObserver(syncHeight).observe(div1);
+});
