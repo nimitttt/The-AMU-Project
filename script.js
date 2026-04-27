@@ -70,20 +70,35 @@ const goToSlide = (index) => {
 // PROJECT SLIDESHOW LOGIC
 
 const projectTrack = document.querySelector(".project-slideshow-track");
-const projectslides = document.querySelectorAll(".project-slide");
+let projectslides = document.querySelectorAll(".project-slide");
+
+const firstClone = projectslides[0].cloneNode(true);
+
+projectTrack.appendChild(firstClone);
+
+projectslides = document.querySelectorAll(".project-slide");
 
 let index = 0;
 
 setInterval(() => {
+  const slideWidth = window.innerWidth >= 890 ? 50 : 100;
+
   index++;
 
-  if (index === projectslides.length) {
-    index = 0;
+  projectTrack.style.transition = "transform 1s ease";
+
+  projectTrack.style.transform = `translateX(-${index * slideWidth}%)`;
+
+  if (index === projectslides.length - 1) {
+    setTimeout(() => {
+      projectTrack.style.transition = "none";
+
+      index = 0;
+
+      projectTrack.style.transform = "translateX(0)";
+    }, 1000);
   }
-
-  projectTrack.style.transform = `translateX(-${index * 100}%)`;
 }, 10000);
-
 // EB HEIGHT ISSUE
 
 const div1List = document.querySelectorAll(".eb1");
